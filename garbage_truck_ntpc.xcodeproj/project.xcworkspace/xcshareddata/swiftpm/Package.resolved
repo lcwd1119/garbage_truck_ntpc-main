@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "RefreshableScrollView",
+        "repositoryURL": "https://github.com/phuhuynh2411/RefreshableScrollView.git",
+        "state": {
+          "branch": null,
+          "revision": "e06edf5dc4facc7fbf71179e8a94f0d1c7035ce3",
+          "version": "1.1.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

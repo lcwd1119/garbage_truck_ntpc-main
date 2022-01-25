@@ -1,0 +1,954 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6364F87A277621B0002DF39B /* garbage_truck_ntpcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F879277621B0002DF39B /* garbage_truck_ntpcApp.swift */; };
+		6364F87C277621B0002DF39B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F87B277621B0002DF39B /* ContentView.swift */; };
+		6364F87E277621B1002DF39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364F87D277621B1002DF39B /* Assets.xcassets */; };
+		6364F881277621B1002DF39B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364F880277621B1002DF39B /* Preview Assets.xcassets */; };
+		6364F88B277621B1002DF39B /* garbage_truck_ntpcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F88A277621B1002DF39B /* garbage_truck_ntpcTests.swift */; };
+		6364F895277621B1002DF39B /* garbage_truck_ntpcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F894277621B1002DF39B /* garbage_truck_ntpcUITests.swift */; };
+		6364F897277621B1002DF39B /* garbage_truck_ntpcUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F896277621B1002DF39B /* garbage_truck_ntpcUITestsLaunchTests.swift */; };
+		6364F8A7277626BA002DF39B /* TruckLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8A6277626BA002DF39B /* TruckLocationResponse.swift */; };
+		6364F8A927763F85002DF39B /* TruckRouteInfResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8A827763F85002DF39B /* TruckRouteInfResponse.swift */; };
+		6364F8AB277643B9002DF39B /* TruckRouteInfListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8AA277643B9002DF39B /* TruckRouteInfListViewModel.swift */; };
+		6364F8AD27764821002DF39B /* TruckLocationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8AC27764821002DF39B /* TruckLocationListViewModel.swift */; };
+		6364F8AF2778F08D002DF39B /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8AE2778F08D002DF39B /* LocationResponse.swift */; };
+		6364F8B12778F1C1002DF39B /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8B02778F1C1002DF39B /* LocationViewModel.swift */; };
+		6364F8B32779915D002DF39B /* TruckLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8B22779915D002DF39B /* TruckLocationView.swift */; };
+		6364F8B5277994DD002DF39B /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8B4277994DD002DF39B /* NetworkMonitor.swift */; };
+		6364F8B727799932002DF39B /* TruckRouteInfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8B627799932002DF39B /* TruckRouteInfView.swift */; };
+		6364F8B927799D76002DF39B /* NetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364F8B827799D76002DF39B /* NetworkView.swift */; };
+		63C57C64277A135A0013A854 /* TruckLocationRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C57C63277A135A0013A854 /* TruckLocationRowView.swift */; };
+		63C57C66277A27A00013A854 /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C57C65277A27A00013A854 /* LocationView.swift */; };
+		63C57C68277A2A6C0013A854 /* TruckRouteInfRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C57C67277A2A6C0013A854 /* TruckRouteInfRowView.swift */; };
+		63C57C6B277A2D490013A854 /* RefreshableScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 63C57C6A277A2D490013A854 /* RefreshableScrollView */; };
+		63C57C6D277B01560013A854 /* TruckRouteInfDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C57C6C277B01560013A854 /* TruckRouteInfDetailView.swift */; };
+		FC7ED73827969D8F000BC2E7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73627969D8F000BC2E7 /* Model.xcdatamodeld */; };
+		FC7ED73A27969DA4000BC2E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73927969DA4000BC2E7 /* Persistence.swift */; };
+		FC7ED73C279DA268000BC2E7 /* UpdateDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73B279DA268000BC2E7 /* UpdateDBView.swift */; };
+		FC7ED73E279F050B000BC2E7 /* CDTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73D279F050B000BC2E7 /* CDTestView.swift */; };
+		FC7ED74027A02AC6000BC2E7 /* CoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73F27A02AC6000BC2E7 /* CoreLocation.swift */; };
+		FCAC4A6C27A04BBA00B4E6D6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAC4A6B27A04BBA00B4E6D6 /* WidgetKit.framework */; };
+		FCAC4A6E27A04BBA00B4E6D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCAC4A6D27A04BBA00B4E6D6 /* SwiftUI.framework */; };
+		FCAC4A7127A04BBA00B4E6D6 /* Mywidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC4A7027A04BBA00B4E6D6 /* Mywidget.swift */; };
+		FCAC4A7327A04BBB00B4E6D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCAC4A7227A04BBB00B4E6D6 /* Assets.xcassets */; };
+		FCAC4A7727A04BBB00B4E6D6 /* MywidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCAC4A6927A04BBA00B4E6D6 /* MywidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCAC4A7C27A0509F00B4E6D6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73627969D8F000BC2E7 /* Model.xcdatamodeld */; };
+		FCAC4A7D27A050B900B4E6D6 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7ED73927969DA4000BC2E7 /* Persistence.swift */; };
+		FCAC4A8327A05B8900B4E6D6 /* CustomPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC4A8227A05B8900B4E6D6 /* CustomPersistenceController.swift */; };
+		FCAC4A8427A061BC00B4E6D6 /* CustomPersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCAC4A8227A05B8900B4E6D6 /* CustomPersistenceController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6364F887277621B1002DF39B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6364F86E277621B0002DF39B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6364F875277621B0002DF39B;
+			remoteInfo = garbage_truck_ntpc;
+		};
+		6364F891277621B1002DF39B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6364F86E277621B0002DF39B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6364F875277621B0002DF39B;
+			remoteInfo = garbage_truck_ntpc;
+		};
+		FCAC4A7527A04BBB00B4E6D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6364F86E277621B0002DF39B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FCAC4A6827A04BBA00B4E6D6;
+			remoteInfo = MywidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCAC4A7827A04BBB00B4E6D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FCAC4A7727A04BBB00B4E6D6 /* MywidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6364F876277621B0002DF39B /* garbage_truck_ntpc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = garbage_truck_ntpc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6364F879277621B0002DF39B /* garbage_truck_ntpcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = garbage_truck_ntpcApp.swift; sourceTree = "<group>"; };
+		6364F87B277621B0002DF39B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6364F87D277621B1002DF39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6364F880277621B1002DF39B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6364F886277621B1002DF39B /* garbage_truck_ntpcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = garbage_truck_ntpcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6364F88A277621B1002DF39B /* garbage_truck_ntpcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = garbage_truck_ntpcTests.swift; sourceTree = "<group>"; };
+		6364F890277621B1002DF39B /* garbage_truck_ntpcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = garbage_truck_ntpcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6364F894277621B1002DF39B /* garbage_truck_ntpcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = garbage_truck_ntpcUITests.swift; sourceTree = "<group>"; };
+		6364F896277621B1002DF39B /* garbage_truck_ntpcUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = garbage_truck_ntpcUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6364F8A6277626BA002DF39B /* TruckLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckLocationResponse.swift; sourceTree = "<group>"; };
+		6364F8A827763F85002DF39B /* TruckRouteInfResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRouteInfResponse.swift; sourceTree = "<group>"; };
+		6364F8AA277643B9002DF39B /* TruckRouteInfListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRouteInfListViewModel.swift; sourceTree = "<group>"; };
+		6364F8AC27764821002DF39B /* TruckLocationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckLocationListViewModel.swift; sourceTree = "<group>"; };
+		6364F8AE2778F08D002DF39B /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
+		6364F8B02778F1C1002DF39B /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		6364F8B22779915D002DF39B /* TruckLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckLocationView.swift; sourceTree = "<group>"; };
+		6364F8B4277994DD002DF39B /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		6364F8B627799932002DF39B /* TruckRouteInfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRouteInfView.swift; sourceTree = "<group>"; };
+		6364F8B827799D76002DF39B /* NetworkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkView.swift; sourceTree = "<group>"; };
+		63C57C63277A135A0013A854 /* TruckLocationRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckLocationRowView.swift; sourceTree = "<group>"; };
+		63C57C65277A27A00013A854 /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		63C57C67277A2A6C0013A854 /* TruckRouteInfRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRouteInfRowView.swift; sourceTree = "<group>"; };
+		63C57C6C277B01560013A854 /* TruckRouteInfDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRouteInfDetailView.swift; sourceTree = "<group>"; };
+		FC7ED73727969D8F000BC2E7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		FC7ED73927969DA4000BC2E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		FC7ED73B279DA268000BC2E7 /* UpdateDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDBView.swift; sourceTree = "<group>"; };
+		FC7ED73D279F050B000BC2E7 /* CDTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDTestView.swift; sourceTree = "<group>"; };
+		FC7ED73F27A02AC6000BC2E7 /* CoreLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocation.swift; sourceTree = "<group>"; };
+		FC7ED74127A02E10000BC2E7 /* garbage-truck-ntpc-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "garbage-truck-ntpc-Info.plist"; sourceTree = SOURCE_ROOT; };
+		FCAC4A6927A04BBA00B4E6D6 /* MywidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MywidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCAC4A6B27A04BBA00B4E6D6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FCAC4A6D27A04BBA00B4E6D6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FCAC4A7027A04BBA00B4E6D6 /* Mywidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mywidget.swift; sourceTree = "<group>"; };
+		FCAC4A7227A04BBB00B4E6D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FCAC4A7427A04BBB00B4E6D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAC4A8027A0546100B4E6D6 /* garbage_truck_ntpc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = garbage_truck_ntpc.entitlements; sourceTree = "<group>"; };
+		FCAC4A8127A059E600B4E6D6 /* MywidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MywidgetExtension.entitlements; sourceTree = "<group>"; };
+		FCAC4A8227A05B8900B4E6D6 /* CustomPersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPersistenceController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6364F873277621B0002DF39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C57C6B277A2D490013A854 /* RefreshableScrollView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F883277621B1002DF39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F88D277621B1002DF39B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAC4A6627A04BBA00B4E6D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAC4A6E27A04BBA00B4E6D6 /* SwiftUI.framework in Frameworks */,
+				FCAC4A6C27A04BBA00B4E6D6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6364F86D277621B0002DF39B = {
+			isa = PBXGroup;
+			children = (
+				FCAC4A8127A059E600B4E6D6 /* MywidgetExtension.entitlements */,
+				6364F878277621B0002DF39B /* garbage_truck_ntpc */,
+				6364F889277621B1002DF39B /* garbage_truck_ntpcTests */,
+				6364F893277621B1002DF39B /* garbage_truck_ntpcUITests */,
+				FCAC4A6F27A04BBA00B4E6D6 /* Mywidget */,
+				FCAC4A6A27A04BBA00B4E6D6 /* Frameworks */,
+				6364F877277621B0002DF39B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6364F877277621B0002DF39B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6364F876277621B0002DF39B /* garbage_truck_ntpc.app */,
+				6364F886277621B1002DF39B /* garbage_truck_ntpcTests.xctest */,
+				6364F890277621B1002DF39B /* garbage_truck_ntpcUITests.xctest */,
+				FCAC4A6927A04BBA00B4E6D6 /* MywidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6364F878277621B0002DF39B /* garbage_truck_ntpc */ = {
+			isa = PBXGroup;
+			children = (
+				FCAC4A8027A0546100B4E6D6 /* garbage_truck_ntpc.entitlements */,
+				FC7ED74127A02E10000BC2E7 /* garbage-truck-ntpc-Info.plist */,
+				FC7ED73527969D7F000BC2E7 /* Model */,
+				6364F8A527762548002DF39B /* models */,
+				6364F8A427762508002DF39B /* view models */,
+				6364F8A3277624F5002DF39B /* views */,
+				6364F879277621B0002DF39B /* garbage_truck_ntpcApp.swift */,
+				6364F87D277621B1002DF39B /* Assets.xcassets */,
+				6364F87F277621B1002DF39B /* Preview Content */,
+			);
+			path = garbage_truck_ntpc;
+			sourceTree = "<group>";
+		};
+		6364F87F277621B1002DF39B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6364F880277621B1002DF39B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6364F889277621B1002DF39B /* garbage_truck_ntpcTests */ = {
+			isa = PBXGroup;
+			children = (
+				6364F88A277621B1002DF39B /* garbage_truck_ntpcTests.swift */,
+			);
+			path = garbage_truck_ntpcTests;
+			sourceTree = "<group>";
+		};
+		6364F893277621B1002DF39B /* garbage_truck_ntpcUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6364F894277621B1002DF39B /* garbage_truck_ntpcUITests.swift */,
+				6364F896277621B1002DF39B /* garbage_truck_ntpcUITestsLaunchTests.swift */,
+			);
+			path = garbage_truck_ntpcUITests;
+			sourceTree = "<group>";
+		};
+		6364F8A3277624F5002DF39B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				6364F87B277621B0002DF39B /* ContentView.swift */,
+				6364F8B22779915D002DF39B /* TruckLocationView.swift */,
+				6364F8B627799932002DF39B /* TruckRouteInfView.swift */,
+				6364F8B827799D76002DF39B /* NetworkView.swift */,
+				63C57C63277A135A0013A854 /* TruckLocationRowView.swift */,
+				63C57C65277A27A00013A854 /* LocationView.swift */,
+				63C57C67277A2A6C0013A854 /* TruckRouteInfRowView.swift */,
+				63C57C6C277B01560013A854 /* TruckRouteInfDetailView.swift */,
+				FC7ED73B279DA268000BC2E7 /* UpdateDBView.swift */,
+				FC7ED73D279F050B000BC2E7 /* CDTestView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		6364F8A427762508002DF39B /* view models */ = {
+			isa = PBXGroup;
+			children = (
+				6364F8AA277643B9002DF39B /* TruckRouteInfListViewModel.swift */,
+				6364F8AC27764821002DF39B /* TruckLocationListViewModel.swift */,
+				6364F8B02778F1C1002DF39B /* LocationViewModel.swift */,
+				6364F8B4277994DD002DF39B /* NetworkMonitor.swift */,
+				FC7ED73F27A02AC6000BC2E7 /* CoreLocation.swift */,
+			);
+			path = "view models";
+			sourceTree = "<group>";
+		};
+		6364F8A527762548002DF39B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				6364F8A6277626BA002DF39B /* TruckLocationResponse.swift */,
+				6364F8A827763F85002DF39B /* TruckRouteInfResponse.swift */,
+				6364F8AE2778F08D002DF39B /* LocationResponse.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		FC7ED73527969D7F000BC2E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC7ED73627969D8F000BC2E7 /* Model.xcdatamodeld */,
+				FC7ED73927969DA4000BC2E7 /* Persistence.swift */,
+				FCAC4A8227A05B8900B4E6D6 /* CustomPersistenceController.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FCAC4A6A27A04BBA00B4E6D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCAC4A6B27A04BBA00B4E6D6 /* WidgetKit.framework */,
+				FCAC4A6D27A04BBA00B4E6D6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FCAC4A6F27A04BBA00B4E6D6 /* Mywidget */ = {
+			isa = PBXGroup;
+			children = (
+				FCAC4A7027A04BBA00B4E6D6 /* Mywidget.swift */,
+				FCAC4A7227A04BBB00B4E6D6 /* Assets.xcassets */,
+				FCAC4A7427A04BBB00B4E6D6 /* Info.plist */,
+			);
+			path = Mywidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6364F875277621B0002DF39B /* garbage_truck_ntpc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6364F89A277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpc" */;
+			buildPhases = (
+				6364F872277621B0002DF39B /* Sources */,
+				6364F873277621B0002DF39B /* Frameworks */,
+				6364F874277621B0002DF39B /* Resources */,
+				FCAC4A7827A04BBB00B4E6D6 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCAC4A7627A04BBB00B4E6D6 /* PBXTargetDependency */,
+			);
+			name = garbage_truck_ntpc;
+			packageProductDependencies = (
+				63C57C6A277A2D490013A854 /* RefreshableScrollView */,
+			);
+			productName = garbage_truck_ntpc;
+			productReference = 6364F876277621B0002DF39B /* garbage_truck_ntpc.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6364F885277621B1002DF39B /* garbage_truck_ntpcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6364F89D277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpcTests" */;
+			buildPhases = (
+				6364F882277621B1002DF39B /* Sources */,
+				6364F883277621B1002DF39B /* Frameworks */,
+				6364F884277621B1002DF39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6364F888277621B1002DF39B /* PBXTargetDependency */,
+			);
+			name = garbage_truck_ntpcTests;
+			productName = garbage_truck_ntpcTests;
+			productReference = 6364F886277621B1002DF39B /* garbage_truck_ntpcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6364F88F277621B1002DF39B /* garbage_truck_ntpcUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6364F8A0277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpcUITests" */;
+			buildPhases = (
+				6364F88C277621B1002DF39B /* Sources */,
+				6364F88D277621B1002DF39B /* Frameworks */,
+				6364F88E277621B1002DF39B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6364F892277621B1002DF39B /* PBXTargetDependency */,
+			);
+			name = garbage_truck_ntpcUITests;
+			productName = garbage_truck_ntpcUITests;
+			productReference = 6364F890277621B1002DF39B /* garbage_truck_ntpcUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FCAC4A6827A04BBA00B4E6D6 /* MywidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCAC4A7B27A04BBB00B4E6D6 /* Build configuration list for PBXNativeTarget "MywidgetExtension" */;
+			buildPhases = (
+				FCAC4A6527A04BBA00B4E6D6 /* Sources */,
+				FCAC4A6627A04BBA00B4E6D6 /* Frameworks */,
+				FCAC4A6727A04BBA00B4E6D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MywidgetExtension;
+			productName = MywidgetExtension;
+			productReference = FCAC4A6927A04BBA00B4E6D6 /* MywidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6364F86E277621B0002DF39B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					6364F875277621B0002DF39B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					6364F885277621B1002DF39B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6364F875277621B0002DF39B;
+					};
+					6364F88F277621B1002DF39B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6364F875277621B0002DF39B;
+					};
+					FCAC4A6827A04BBA00B4E6D6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6364F871277621B0002DF39B /* Build configuration list for PBXProject "garbage_truck_ntpc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6364F86D277621B0002DF39B;
+			packageReferences = (
+				63C57C69277A2D490013A854 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */,
+			);
+			productRefGroup = 6364F877277621B0002DF39B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6364F875277621B0002DF39B /* garbage_truck_ntpc */,
+				6364F885277621B1002DF39B /* garbage_truck_ntpcTests */,
+				6364F88F277621B1002DF39B /* garbage_truck_ntpcUITests */,
+				FCAC4A6827A04BBA00B4E6D6 /* MywidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6364F874277621B0002DF39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6364F881277621B1002DF39B /* Preview Assets.xcassets in Resources */,
+				6364F87E277621B1002DF39B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F884277621B1002DF39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F88E277621B1002DF39B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAC4A6727A04BBA00B4E6D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAC4A7327A04BBB00B4E6D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6364F872277621B0002DF39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6364F8AB277643B9002DF39B /* TruckRouteInfListViewModel.swift in Sources */,
+				6364F8B32779915D002DF39B /* TruckLocationView.swift in Sources */,
+				6364F8AF2778F08D002DF39B /* LocationResponse.swift in Sources */,
+				FC7ED74027A02AC6000BC2E7 /* CoreLocation.swift in Sources */,
+				6364F87C277621B0002DF39B /* ContentView.swift in Sources */,
+				6364F87A277621B0002DF39B /* garbage_truck_ntpcApp.swift in Sources */,
+				FC7ED73827969D8F000BC2E7 /* Model.xcdatamodeld in Sources */,
+				6364F8A7277626BA002DF39B /* TruckLocationResponse.swift in Sources */,
+				FCAC4A8327A05B8900B4E6D6 /* CustomPersistenceController.swift in Sources */,
+				FC7ED73A27969DA4000BC2E7 /* Persistence.swift in Sources */,
+				6364F8B727799932002DF39B /* TruckRouteInfView.swift in Sources */,
+				FC7ED73E279F050B000BC2E7 /* CDTestView.swift in Sources */,
+				6364F8AD27764821002DF39B /* TruckLocationListViewModel.swift in Sources */,
+				6364F8B5277994DD002DF39B /* NetworkMonitor.swift in Sources */,
+				63C57C68277A2A6C0013A854 /* TruckRouteInfRowView.swift in Sources */,
+				63C57C64277A135A0013A854 /* TruckLocationRowView.swift in Sources */,
+				63C57C6D277B01560013A854 /* TruckRouteInfDetailView.swift in Sources */,
+				6364F8B927799D76002DF39B /* NetworkView.swift in Sources */,
+				63C57C66277A27A00013A854 /* LocationView.swift in Sources */,
+				FC7ED73C279DA268000BC2E7 /* UpdateDBView.swift in Sources */,
+				6364F8A927763F85002DF39B /* TruckRouteInfResponse.swift in Sources */,
+				6364F8B12778F1C1002DF39B /* LocationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F882277621B1002DF39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6364F88B277621B1002DF39B /* garbage_truck_ntpcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6364F88C277621B1002DF39B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6364F895277621B1002DF39B /* garbage_truck_ntpcUITests.swift in Sources */,
+				6364F897277621B1002DF39B /* garbage_truck_ntpcUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAC4A6527A04BBA00B4E6D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCAC4A8427A061BC00B4E6D6 /* CustomPersistenceController.swift in Sources */,
+				FCAC4A7D27A050B900B4E6D6 /* Persistence.swift in Sources */,
+				FCAC4A7127A04BBA00B4E6D6 /* Mywidget.swift in Sources */,
+				FCAC4A7C27A0509F00B4E6D6 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6364F888277621B1002DF39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6364F875277621B0002DF39B /* garbage_truck_ntpc */;
+			targetProxy = 6364F887277621B1002DF39B /* PBXContainerItemProxy */;
+		};
+		6364F892277621B1002DF39B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6364F875277621B0002DF39B /* garbage_truck_ntpc */;
+			targetProxy = 6364F891277621B1002DF39B /* PBXContainerItemProxy */;
+		};
+		FCAC4A7627A04BBB00B4E6D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FCAC4A6827A04BBA00B4E6D6 /* MywidgetExtension */;
+			targetProxy = FCAC4A7527A04BBB00B4E6D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6364F898277621B1002DF39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6364F899277621B1002DF39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6364F89B277621B1002DF39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = garbage_truck_ntpc/garbage_truck_ntpc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"garbage_truck_ntpc/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VQAY6397M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "garbage-truck-ntpc-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6364F89C277621B1002DF39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = garbage_truck_ntpc/garbage_truck_ntpc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"garbage_truck_ntpc/Preview Content\"";
+				DEVELOPMENT_TEAM = 5VQAY6397M;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "garbage-truck-ntpc-Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We’ll use this to personalize your app experience";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6364F89E277621B1002DF39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/garbage_truck_ntpc.app/garbage_truck_ntpc";
+			};
+			name = Debug;
+		};
+		6364F89F277621B1002DF39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpcTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/garbage_truck_ntpc.app/garbage_truck_ntpc";
+			};
+			name = Release;
+		};
+		6364F8A1277621B1002DF39B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = garbage_truck_ntpc;
+			};
+			name = Debug;
+		};
+		6364F8A2277621B1002DF39B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpcUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = garbage_truck_ntpc;
+			};
+			name = Release;
+		};
+		FCAC4A7927A04BBB00B4E6D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MywidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VQAY6397M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mywidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mywidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpc.Mywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FCAC4A7A27A04BBB00B4E6D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MywidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5VQAY6397M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Mywidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Mywidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "David.garbage-truck-ntpc.Mywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6364F871277621B0002DF39B /* Build configuration list for PBXProject "garbage_truck_ntpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6364F898277621B1002DF39B /* Debug */,
+				6364F899277621B1002DF39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6364F89A277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6364F89B277621B1002DF39B /* Debug */,
+				6364F89C277621B1002DF39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6364F89D277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6364F89E277621B1002DF39B /* Debug */,
+				6364F89F277621B1002DF39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6364F8A0277621B1002DF39B /* Build configuration list for PBXNativeTarget "garbage_truck_ntpcUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6364F8A1277621B1002DF39B /* Debug */,
+				6364F8A2277621B1002DF39B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCAC4A7B27A04BBB00B4E6D6 /* Build configuration list for PBXNativeTarget "MywidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCAC4A7927A04BBB00B4E6D6 /* Debug */,
+				FCAC4A7A27A04BBB00B4E6D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63C57C69277A2D490013A854 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/phuhuynh2411/RefreshableScrollView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63C57C6A277A2D490013A854 /* RefreshableScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63C57C69277A2D490013A854 /* XCRemoteSwiftPackageReference "RefreshableScrollView" */;
+			productName = RefreshableScrollView;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		FC7ED73627969D8F000BC2E7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC7ED73727969D8F000BC2E7 /* Model.xcdatamodel */,
+			);
+			currentVersion = FC7ED73727969D8F000BC2E7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6364F86E277621B0002DF39B /* Project object */;
+}

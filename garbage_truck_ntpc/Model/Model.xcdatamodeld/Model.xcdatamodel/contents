@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21C52" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Route" representedClassName="Route" syncable="YES" codeGenerationType="class">
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsFriday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsMonday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsSaturday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsSunday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsThursday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsTuesday" optional="YES" attributeType="String"/>
+        <attribute name="foodScrapsWednesday" optional="YES" attributeType="String"/>
+        <attribute name="garbageFriday" optional="YES" attributeType="String"/>
+        <attribute name="garbageMonday" optional="YES" attributeType="String"/>
+        <attribute name="garbageSaturday" optional="YES" attributeType="String"/>
+        <attribute name="garbageSunday" optional="YES" attributeType="String"/>
+        <attribute name="garbageThursday" optional="YES" attributeType="String"/>
+        <attribute name="garbageTuesday" optional="YES" attributeType="String"/>
+        <attribute name="garbageWednesday" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="latitude" optional="YES" attributeType="String"/>
+        <attribute name="lineId" optional="YES" attributeType="String"/>
+        <attribute name="lineName" optional="YES" attributeType="String"/>
+        <attribute name="longitude" optional="YES" attributeType="String"/>
+        <attribute name="memo" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rank" optional="YES" attributeType="String"/>
+        <attribute name="recyclingFriday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingMonday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingSaturday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingSunday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingThursday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingTuesday" optional="YES" attributeType="String"/>
+        <attribute name="recyclingWednesday" optional="YES" attributeType="String"/>
+        <attribute name="time" optional="YES" attributeType="String"/>
+        <attribute name="village" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Route" positionX="-63" positionY="-18" width="128" height="523"/>
+    </elements>
+</model>
